@@ -138,6 +138,8 @@ Pod względem szybkości działania najszybsze modele pod względem czasu infere
 Podsumowując, wybór modelu zależy od kompromisu między dokładnością a szybkością działania. Model 8n wydaje się oferować najlepszy balans, łącząc wysoką skuteczność detekcji z niskim czasem inferencji, podczas gdy modele 11m i 11x wymagają dalszej optymalizacji, aby osiągnąć konkurencyjną wydajność.
 
 ## 9. Wnioski
+W przeprowadzonym projekcie udało się skutecznie zastosować modele z rodziny YOLO do automatycznego wykrywania budynków na obrazach. Proces trenowania oraz testowania modeli potwierdził ich zdolność do precyzyjnego zaznaczania obiektów w postaci prostokątnych obszarów zainteresowania (ROI). Analiza wyników pokazała, że w tym konkretnym zadaniu lepsze rezultaty osiągnęły mniejsze warianty modeli YOLO, które nie tylko zapewniły wyższą dokładność detekcji, ale również charakteryzowały się krótszym czasem inferencji.
+
 Jedną z głównych przyczyn może być niedostateczne dopasowanie hiperparametrów treningowych – większe modele wymagają zwykle niższego learning rate oraz dłuższego czasu uczenia, aby w pełni wykorzystać swój potencjał. Przykładowo, YOLOv11x był trenowany przez 120 epok przy learning rate 0.001, co może być niewystarczające.
 
 Drugim czynnikiem mogącym wpływać na wyniki jest rozmiar zbioru danych. Modele takie jak YOLOv11x mają więcej parametrów i wymagają znacznie większej ilości zróżnicowanych danych treningowych, aby uniknąć przeuczenia lub niedouczenia. W projekcie użyto około 3 tysięcy zdjęć, co może być wystarczające dla mniejszych modeli, ale zbyt małe dla większych architektur. W przypadku ograniczonych danych większe modele mogą po prostu nie nauczyć się wystarczająco dobrze rozpoznawać istotne wzorce.
