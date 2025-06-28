@@ -37,7 +37,7 @@ Drugim źródłem jest zestaw Modern Architecture – Kaggle (https://www.kaggle
 
 Trzecim uzupełniającym źródłem danych był zbiór House, Rooms, Streets Image Dataset – Kaggle (https://www.kaggle.com/datasets/mikhailma/house-rooms-streets-image-dataset). Ze zbioru tego wyselekcjonowano zdjęcia przedstawiające ulice, które również zawierały widoczne budynki. Na wybranych obrazach ręcznie zaznaczono obszary budynków, uzupełniając tym samym zbiór treningowy o różnorodne sceny miejskie.
 
-Nowo stworzony dataset dostępny jest na platformie Roboflow: Building Detection - Roboflow (https://universe.roboflow.com/buildingrecognition/building-detection-id8vh).
+Nowo stworzony dataset dostępny jest na platformie Roboflow (https://universe.roboflow.com/buildingrecognition/building-detection-id8vh).
 
 Po przygotowaniu adnotacji, wszystkie trzy zbiory zostały połączone w jeden, liczący łącznie ponad 3000 obrazów (po zastosowaniu augumentacji). Dane te zostały następnie losowo podzielone na zbiór treningowy (85%) oraz walidacyjny (15%) przy użyciu skryptu `split_maker.py`. Dodatkowo, ze zbioru treningowego losowo wybrano 100 zdjęć, tworząc niezależny zestaw testowy, który posłużył do końcowej oceny wydajności modeli detekcji.
 
