@@ -182,4 +182,3 @@ datasets/
 old_dataset/
 *.pt
 MLR.git/
-runs/detect/predict*
