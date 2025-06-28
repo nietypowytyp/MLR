@@ -1,20 +1,19 @@
-name: myenv
+name: MLR_env
 channels:
-  - defaults
+  - nvidia
+  - pytorch
   - conda-forge
+  - defaults
 dependencies:
   - numpy
   - pandas
   - scipy
   - opencv
-  - kaggle
   - pillow
-  - fastai
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
   - pip
   - pip:
       - ultralytics
-      - fastai
-      - torch==2.6.0+cu126
-      - torchvision
-      - torchaudio
-      - "pip install torch==2.6.0+cu126 torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu126"
