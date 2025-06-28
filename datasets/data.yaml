@@ -1,0 +1,14 @@
+path: D:/repos/MLR/datasets/
+train: D:/repos/MLR/datasets/train/images
+val: D:/repos/MLR/datasets/valid/images
+test: D:/repos/MLR/datasets/test/images
+
+nc: 1
+names: ['building']
+
+roboflow:
+  workspace: trees-detection
+  project: building-detection-scazo
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/trees-detection/building-detection-scazo/dataset/1
